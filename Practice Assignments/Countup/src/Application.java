@@ -8,7 +8,12 @@ public static void main(String[] args) {
 	int userInput = input.nextInt();
 	int x = 0;
 	for(int i=0;i<=userInput;i++){
-		 x = x+i;
+		if(i%2==1){
+			x = x+i;
+		}
+		
+		
+		
 	}
 	 System.out.println(x);
 }
