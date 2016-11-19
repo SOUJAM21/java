@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	
 	Sampler sample = new Sampler();
 	
-	ArrayList countDown = sample.getEvenNumbers(userInput);
+	ArrayList<Integer> countDown = sample.getEvenNumbers(userInput);
 	
 	for(int x=0 ; x<countDown.size(); x++){
 		int number = (int) countDown.get(x);
