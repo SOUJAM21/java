@@ -15,8 +15,9 @@ public class PersonManager {
 		
 		int count = 1;
 		while(in.hasNextLine()){
-			String line = in.nextLine();
-			Person person = new Person(line);
+			String line = in.next();
+			int age = in.nextInt();
+			Person person = new Person(line,age);
 			
 			persons.add(person);
 			count++;

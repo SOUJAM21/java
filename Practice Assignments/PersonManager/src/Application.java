@@ -10,7 +10,8 @@ String fileName = "example.txt";
 	
 	for(int i=0;i<persons.size();i++){
 		Person p = persons.get(i);
-		System.out.println(p.getName());
+		System.out.println( p.getName() + p.getAge() );
+
 	}
 }
 }
