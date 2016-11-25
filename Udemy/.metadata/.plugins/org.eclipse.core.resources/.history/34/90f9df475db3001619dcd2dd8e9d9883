@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Application {
+public static void main(String[] args) throws Exception {
+	System.out.println("Enter a name:");
+	Scanner s1 = new Scanner(System.in);
+	String name = s1.nextLine();
+	
+	System.out.println("Enter age:");
+	Scanner num = new Scanner(System.in);
+	int age = num.nextInt();
+	
+	do{
+		
+	}while(true);
+		
+	try{
+		Person p1 = new Person(name, age);
+		System.out.println(p1.getName() + p1.getAge());
+	}catch (Exception e){
+		System.out.println("Please Enter a name");
+	}
+	
+	
+	
+	
+}
+}
