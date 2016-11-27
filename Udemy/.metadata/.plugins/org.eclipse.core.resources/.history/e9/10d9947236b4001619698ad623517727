@@ -1,0 +1,26 @@
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Application {
+public static void main(String[] args) throws FileNotFoundException {
+	
+	Menu m1 = new Menu();
+	m1.getOption();
+	
+	Scanner s1 = new Scanner(System.in);
+	int userInput = s1.nextInt();
+	
+	UI u1 = new UI();
+	
+	if(userInput == 1){
+		u1.viewUsers();
+	}
+	else if(userInput == 2){
+		u1.findUsers();
+	}
+	else if(userInput == 3){
+		u1.quitProgram();
+	}
+}
+}

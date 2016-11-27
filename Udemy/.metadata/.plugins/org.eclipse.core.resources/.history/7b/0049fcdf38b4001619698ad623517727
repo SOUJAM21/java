@@ -22,7 +22,7 @@ public static void main(String[] args) throws FileNotFoundException {
 			u1.findUsers();
 		}
 		else if(optionInput == 3){
-			break;
+			u1.quitProgram();
 		}
 	}
 	
