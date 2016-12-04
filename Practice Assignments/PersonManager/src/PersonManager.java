@@ -1,5 +1,9 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -30,5 +34,17 @@ public class PersonManager {
 		return persons;
 		
 	}
-}
 	
+	public void addPerson(String name, int age) throws IOException{
+		
+		try(FileWriter fw = new FileWriter("People.txt", true);
+			    BufferedWriter bw = new BufferedWriter(fw);
+				   PrintWriter out = new PrintWriter(bw))
+		{
+		
+			out.print("\n" + name + "  " + age);
+		
+		
+	}
+}
+}
