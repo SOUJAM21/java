@@ -42,6 +42,10 @@ public static void main(String[] args) throws IOException {
 			pm1.addPerson(newName, newAge);
 			
 		}
+		
+		else if(optionInput == 5){
+			pm1.deletePerson();
+		}
 	}
 	
 }

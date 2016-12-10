@@ -6,5 +6,6 @@ public class Menu {
 		System.out.println("2:Find");
 		System.out.println("3:Quit");
 		System.out.println("4:Add");
+		System.out.println("5:Delete");
 	}
 }
