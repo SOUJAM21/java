@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class WordsvsCharacters {
+public static void main(String[] args) {
+	System.out.println("Enter a sentence:");
+	
+	Scanner s1 = new Scanner(System.in);
+	String userInput = s1.nextLine();
+	
+	String[] values = userInput.split(" ");
+	System.out.println(values.length);
+	
+}
+}

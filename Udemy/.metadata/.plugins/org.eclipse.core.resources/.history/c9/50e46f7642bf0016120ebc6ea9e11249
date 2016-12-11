@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Application {
+	public static void main(String[] args) {
+		System.out.println("Enter a full name: ");
+		Scanner s1 = new Scanner(System.in);
+		String userInput = s1.next();
+		
+	
+	//String Str = new String("Welcome-to-Tutorialspoint.com");     
+    
+		String[] values = userInput.split("");
+		System.out.println("First name=" + values[0]);
+	
+	
+}
+}
