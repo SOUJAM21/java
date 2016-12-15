@@ -1,0 +1,14 @@
+import java.io.FileNotFoundException;
+
+public class Application {
+public static void main(String[] args) throws FileNotFoundException {
+	
+	
+	String s1 = "My name is Sourabh";
+	TextProcess t1 = new TextProcess(s1);
+	
+	int wordCount = t1.getWordCount(s1);
+	System.out.println("This word: " + s1);
+	System.out.println("# of words: " + wordCount);
+}
+}

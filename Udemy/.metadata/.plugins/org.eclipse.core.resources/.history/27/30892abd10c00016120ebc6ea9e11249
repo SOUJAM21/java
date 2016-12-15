@@ -1,0 +1,13 @@
+
+public class TextProcess {
+	String word;
+	
+	public void TestProcess(String word){
+		this.word = word;
+	}
+	
+	public void getWordCount(){
+		
+	}
+	
+}

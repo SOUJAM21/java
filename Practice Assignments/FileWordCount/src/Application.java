@@ -1,0 +1,34 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Application {
+public static void main(String[] args) throws FileNotFoundException {
+	
+	
+		String fileName = "test.txt";
+		
+		File textFile = new File(fileName);
+		
+		Scanner in = new Scanner(textFile);
+		
+		int total = 0 ;
+		while(in.hasNextLine()){
+			//System.out.println(in.nextLine());
+			
+			String line = in.nextLine();
+			
+			TextProcess t1 = new TextProcess(line);
+			
+			int wordCount = t1.getWordCount(line);
+			int letterCount = t1.getLetterCount(line);
+			
+			System.out.println("The sentence is : " + line);
+			System.out.println("# of words: " + wordCount);
+			System.out.println("# of letters: " + letterCount);
+			
+			total = wordCount + total;
+		}
+
+}
+}

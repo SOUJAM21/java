@@ -1,0 +1,9 @@
+import java.io.FileNotFoundException;
+
+public class Application {
+public static void main(String[] args) throws FileNotFoundException {
+	TextProcess t1 = new TextProcess();
+	String word = t1.getName();
+	System.out.println(word);
+}
+}

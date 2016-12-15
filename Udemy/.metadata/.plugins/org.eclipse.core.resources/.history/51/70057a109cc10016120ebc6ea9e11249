@@ -1,0 +1,42 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class TextProcess {
+	String word;
+	
+	public void TextProcess(String word){
+		this.word = word;
+	}
+	
+	public int getWordCount(){
+		String[] values = word.split(" ");
+		int numberOfWords = values.length;
+		return numberOfWords;
+	}
+	
+	public void getLetterCount(){
+		String[] values = word.split(" ");
+		
+		int startingNumberOfLetters = 0;
+		for(int i=0;i<values.length;i++){
+			int letters = values[i].length();
+			startingNumberOfLetters = letters + startingNumberOfLetters ;
+			
+		}
+	}
+	
+	public void getName() throws FileNotFoundException{
+String fileName = "test.txt";
+		
+		File textFile = new File(fileName);
+		
+		Scanner in = new Scanner(textFile);
+		
+		
+		while(in.hasNextLine()){
+			
+	System.out.println(in.nextLine());
+	}
+}
+}
