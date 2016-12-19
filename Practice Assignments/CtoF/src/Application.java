@@ -6,8 +6,8 @@ public static void main(String[] args) {
 	Scanner in = new Scanner(System.in);
 	int celsius = in.nextInt();
 	
-	Math m1 = new Math();
-	double fahrenheit = m1.Convert(celsius);
+	TemperatureConverter m1 = new TemperatureConverter();
+	double fahrenheit = m1.convertFromCelsiusToFahrenheit(celsius);
 	
 	System.out.println("Celsius: " + celsius);
 	System.out.println("Fahrenheit: " + fahrenheit);

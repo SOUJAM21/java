@@ -1,7 +1,0 @@
-
-public class Math {
-	public double Convert (int fahrenheit){
-		double celsius = (double) (1.8* fahrenheit + 32);
-		return celsius;
-	}
-}
