@@ -12,7 +12,7 @@ public static void main(String[] args) {
 		int userNumber = s1.nextInt();
 		
 		numbers[i] = userNumber;
-		 
+		
 		 if(userNumber == 0){
 		Math m1 = new Math();
 		totalValue = m1.add(numbers);
