@@ -1,17 +1,8 @@
 
 public class Math {
 	public int findGCF(int num1,int num2){
-		int max;
-		int min;
-		
-		if(num1>num2){
-			max = num1;
-			min = num2;
-		}
-		else{
-			max = num2;
-			min = num1;
-		}
+		int max = java.lang.Math.max(num1, num2);
+		int min = java.lang.Math.min(num1, num2);
 		
 		if(max%min == 0){
 			return min;

@@ -16,6 +16,6 @@ public static void main(String[] args) {
 	Math m1 = new Math();
 	int GCF = m1.findGCF(num1, num2);
 	
-	System.out.println("The GCF is " + GCF);
+	System.out.println("The GCF is: " + GCF);
 }
 }
