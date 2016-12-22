@@ -1,0 +1,13 @@
+-ask user what word they want to replace
+-ask user what word they want to replace it with
+
+-open the file for reading
+-read each line
+	-replace the word
+	-collect the replaced string
+-close the file
+
+-open the file for writing
+-for each replaced string write to new file
+-close file
+
