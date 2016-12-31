@@ -7,5 +7,6 @@ public class Menu {
 		System.out.println("3:Quit");
 		System.out.println("4:Add");
 		System.out.println("5:Delete");
+		System.out.println("6:Save");
 	}
 }
