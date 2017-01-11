@@ -6,7 +6,7 @@ import javax.print.attribute.IntegerSyntax;
 public class Sampler {
 	/*
 	 * gets all even numbers given a starting value
-	 * returns an array of all even numbers
+	 * 
 	 */
 	public ArrayList<Integer> getEvenNumbers(int number) {
 
