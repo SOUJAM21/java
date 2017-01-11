@@ -1,6 +1,5 @@
 
 public class ChessBoard {
-	
 	public void draw(int gridSize) {
 		String black = "B";
 		String white = "W";
