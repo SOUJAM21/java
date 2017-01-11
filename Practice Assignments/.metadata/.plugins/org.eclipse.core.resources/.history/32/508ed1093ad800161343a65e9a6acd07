@@ -1,12 +1,5 @@
-
-/*
- * Math functions.
- */
+//adding all the values the user inputs
 public class Math {
-	/*
-	 * adds all the numbers given
-	 * returns total 
-	 */
 	public int add(int[] numbers) {
 		int total = 0;
 		for (int i = 0; i < numbers.length; i++) {
@@ -14,5 +7,4 @@ public class Math {
 		}
 		return total;
 	}
-
 }

@@ -11,9 +11,9 @@ public class Application {
 			Scanner s1 = new Scanner(System.in);
 			int userNumber = s1.nextInt();
 
-			numbers[i] = userNumber; //adding user Input numbers to array
+			numbers[i] = userNumber;
 
-			if (userNumber == 0) { // breaking out of loop and adding all the user input values
+			if (userNumber == 0) {
 				Math m1 = new Math();
 				totalValue = m1.add(numbers);
 
