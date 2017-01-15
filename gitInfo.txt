@@ -1,3 +1,15 @@
 git credential-osxkeychain erase
 host=github.com
 protocol=https
+
+git branch //to check what branch
+
+git branch <name> //to create a branch
+
+git checkout <name> //switch to the branch
+
+git merge <name> // merge branches
+
+git branch -d <name> // to delete branch local
+
+git push origin -d <name> //delete branch on remote
