@@ -1,0 +1,6 @@
+
+public class Application {
+	Person p1 = new Person("Sourabh", 16);
+	
+	sysout
+}

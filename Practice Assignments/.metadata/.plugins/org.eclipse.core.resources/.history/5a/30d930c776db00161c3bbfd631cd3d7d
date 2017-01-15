@@ -1,0 +1,50 @@
+
+public class Person {
+	private String name;
+	private int age;
+	private Address homeAddress;
+	private Address wordAddress;
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public Address getHomeAddress(){
+		return homeAddress;
+	}
+	
+	public Address getWorkAddress(){
+		return wordAddress;
+	}
+	
+	public void setHomeAddress(Address address){
+		this.homeAddress = address;
+	}
+	
+	public void getWorkAddress(Address address){
+		this.wordAddress = address;
+	}
+	
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void printInfo(){
+		System.out.println(name + " " + age);
+		System.out.println("Home Address: " + homeAddress.addressLineOne);
+		System.out.println(homeAddress.city);
+		System.out.println(homeAddress.state);
+		System.out.println(homeAddress.zip);
+		
+		System.out.println("Work Address: " + wordAddress.addressLineOne);
+		System.out.println(wordAddress.city);
+		System.out.println(wordAddress.state);
+		System.out.println(wordAddress.zip);
+		
+	}
+}

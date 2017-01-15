@@ -1,0 +1,7 @@
+
+public class Address {
+	String addressLineOne;
+	String city;
+	String state;
+	int zip;
+}
