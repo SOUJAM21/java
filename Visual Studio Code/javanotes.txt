@@ -1,0 +1,7 @@
+-class name must be the same as the program name
+-public static void main (String args[])
+    -main has to be public and static
+
+-constructor has no return type (DONT PUT "VOID" EITHER)    
+
+-when calling a constrcutor its the same as a method but you put the inputs in the same line
