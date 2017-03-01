@@ -5,3 +5,11 @@
 -constructor has no return type (DONT PUT "VOID" EITHER)    
 
 -when calling a constrcutor its the same as a method but you put the inputs in the same line
+
+1.Object oriented principles: focus around classes and objects
+2.Procedural: functions call function; works in a systamatic way
+
+    Inheritence: reusing  Animal (animal->Dog,cat,fish)
+    Incapsulation: hiding the details
+
+Passing to base class: "super()"

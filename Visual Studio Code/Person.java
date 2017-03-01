@@ -20,4 +20,8 @@ public class Person{
     public Address getAddress(){
         return address;
     }
+
+    public void sleep(){
+        System.out.println("Sleeping");
+    }
 }
