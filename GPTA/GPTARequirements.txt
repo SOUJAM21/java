@@ -1,0 +1,5 @@
+GPTA Requirements:
+
+    GPTA App Will have Program and Participants.
+	Participants will contain names, contact info, 
+	Program will contain start time, duration, and program name
