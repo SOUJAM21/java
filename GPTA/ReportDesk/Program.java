@@ -13,6 +13,10 @@ class Program{
         this.participants = new  ArrayList<Participant>();
 }
 
+  public Program(String programName){
+        this.programName = programName;
+        this.participants = new  ArrayList<Participant>();
+}
     public String getProgramName(){
         return programName;
     } 

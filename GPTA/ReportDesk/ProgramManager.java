@@ -1,5 +1,10 @@
 import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 class ProgramManager{
+/*
     public ArrayList<Program> loadPrograms(String fileName){
              
              ArrayList<Program> programs = new ArrayList<Program>();
@@ -18,4 +23,22 @@ class ProgramManager{
            
            return programs;
     } 
+    */
+
+
+    public ArrayList<Program> loadPrograms(String fileName) throws IOException{
+        ArrayList<Program> programs = new ArrayList<Program>();
+        FileReader inputFile = new FileReader("ProgramPerformance.txt");
+		 BufferedReader br = new BufferedReader(inputFile);
+		 String line;
+
+          while((line = br.readLine()) != null){
+             Program program = new Program(line);
+
+             programs.add(program);
+         }
+
+         return programs;
+
+    }
 }

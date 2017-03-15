@@ -1,8 +1,23 @@
 import java.util.ArrayList;
-class Application{
-    public static void main(String [ ] args){
-       ProgramManager p1 = new ProgramManager();
+import java.io.IOException;
 
-       System.out.println(p1.loadPrograms("Null"));
+class Application{
+    public static void main(String [ ] args){     
+       ProgramManager p1 = new ProgramManager();
+      
+       try{
+         ArrayList<Program> programs = p1.loadPrograms("ProgramPerformance.txt"); 
+
+             for(int i=0;i<programs.size();i++){
+                 Program program = programs.get(i);
+                 System.out.println(program.getProgramName()); 
+             }
+       }
+       
+       catch (java.io.IOException e){
+            System.out.println(e.toString());
+       }
+       
+    
     }
 }
