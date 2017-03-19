@@ -31,14 +31,28 @@ class ProgramManager{
         FileReader inputFile = new FileReader("ProgramPerformance.txt");
 		 BufferedReader br = new BufferedReader(inputFile);
 		 String line;
+         int lineNumber = 1;
+
+         Program lastProgramName = null;
 
           while((line = br.readLine()) != null){
-             Program program = new Program(line);
+             System.out.println(lineNumber);
+             
 
-             programs.add(program);
+             if(lineNumber % 2 == 1){
+                Program program = new Program(line);
+                programs.add(program);
+                lastProgramName = program;
+             }
+             else{
+                 Participant participant = new Participant(line,null);
+                 lastProgramName.addParticipant(participant);
+             }
+             
+             lineNumber++;             
          }
-
          return programs;
 
     }
+
 }
