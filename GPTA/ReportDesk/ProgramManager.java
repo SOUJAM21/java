@@ -33,7 +33,7 @@ class ProgramManager{
 		 String line;
          int lineNumber = 1;
 
-         Program lastProgramName = null;
+         Program lastProgram = null;
 
           while((line = br.readLine()) != null){
              System.out.println(lineNumber);
@@ -42,11 +42,15 @@ class ProgramManager{
              if(lineNumber % 2 == 1){
                 Program program = new Program(line);
                 programs.add(program);
-                lastProgramName = program;
+                lastProgram = program;
              }
              else{
-                 Participant participant = new Participant(line,null);
-                 lastProgramName.addParticipant(participant);
+                 String [] participants = line.split(",");
+
+                 for(int i=0;i<participants.length;i++){
+                    Participant p1 = new Participant(participants[i],null);
+                    lastProgram.addParticipant(p1);
+                 }
              }
              
              lineNumber++;             
