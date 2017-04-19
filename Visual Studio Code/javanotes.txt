@@ -13,3 +13,52 @@
     Incapsulation: hiding the details
 
 Passing to base class: "super()"
+
+
+Program:
+    - set of instructions with actions and data
+         ex) action: run
+                data: 2miles
+
+data type:
+    - the specific type for data inputs
+        ex) int String given by jdk
+            When needed also possible to create own data types such as in a PersonInfo Program 
+            you can create a data type called "Address"
+
+object oriented principles:
+-  programs use objects and are built around objects
+    Inheritence: new objects can use the same properties as already existing ones
+          ex) If you hava an Animal Program and there is Animal Class and Cat class.
+            the animal class will have properties such as color or age which are also similar 
+            properties of Cat class which you can then have the Cat object inherit properties from Animal
+    
+    Incapsualtion: hiding details  
+       ex) you can see the car moving forward when hitting the accelarator
+           but cant see all the actions going on inside the car
+   
+    Polymorphisim: multiple forms of one single object
+       ex) phone is a single object but can take on the form of a camera, radio, music player
+
+    Abstarct: --------
+
+binary: representation of computer instructions using the numbers 0 and 1
+
+machine language:
+-set of instructions executed from computers Central Processing Unit (CPU) uses 
+either binary or hexidecimal system 
+
+compiler:
+-transforms source code into a computer language
+
+operating system: a system software that manages computer hardware and software
+   Ex) OS, Linux, Windows
+
+static vs runtime:
+static:syntax erroe\r
+runtime: logical error
+
+
+exception: Exceptions are like errors in programs
+
+
