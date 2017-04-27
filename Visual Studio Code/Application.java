@@ -11,7 +11,7 @@ public class Application{
         s1.sleep();
 
     }
-}\
+}
 
 
 
