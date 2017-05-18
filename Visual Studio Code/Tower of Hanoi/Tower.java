@@ -7,12 +7,16 @@ public class Tower{
     }
 
     public Disc removeDisc(){
-        return null;
+        return discs.pop();
     }
 
     public void show(){
         for(Disc disc : discs){
-             System.out.println("          " + disc.getSize() );
+            System.out.print("\t");
+             for(int i=0;i<disc.getSize();i++){
+                 System.out.print("-");
+             }
+             System.out.println(" ");
         }
     }
 }
