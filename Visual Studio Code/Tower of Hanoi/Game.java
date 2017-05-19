@@ -3,14 +3,18 @@ import java.util.Scanner;
 
 public class Game{
     ArrayList<Tower> towers = new ArrayList<Tower>();
-    public void play(){
+    boolean loop = true;
+    public void play() throws Exception{
         //setup
         setUp();
     //loop
         //show
-        show();
         
-       System.out.println("Which Tower:");
+        
+        while(loop=true){
+            show();
+
+        System.out.println("Which Tower:");
        
        System.out.println("From:");
        Scanner s1 = new Scanner(System.in);
@@ -20,15 +24,8 @@ public class Game{
        Scanner s2 = new Scanner(System.in);
        int to = s2.nextInt();
 
-       Tower fromTower = towers.get(from-1);
-       Tower toTower = towers.get(to-1);
-
-       Disc movingDisc = fromTower.removeDisc();
-       toTower.addDisc(movingDisc);
-
-       show();
-
-
+      move(from,to);
+}
         //move
         //if(isGameDone){
             //End Game
@@ -36,7 +33,7 @@ public class Game{
     //loop
     }
 
-    private void setUp(){
+    private void setUp() throws Exception{
         //create three towers
         
         for(int i=0;i<3;i++){
@@ -53,8 +50,19 @@ public class Game{
         }
         //add three discs to tower #1
 
-    private void move(int from,int to){
+    private void move(int from,int to) throws Exception{
+       Tower fromTower = towers.get(from-1);
+       Tower toTower = towers.get(to-1);
 
+       Disc movingDisc = fromTower.removeDisc();
+       
+       try{
+        toTower.addDisc(movingDisc);
+       }catch(Exception e){
+           System.out.println("Cannot Put On Disc!!!");
+            fromTower.addDisc(movingDisc);
+       }
+           
     }
 
     private void show(){

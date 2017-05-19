@@ -2,8 +2,15 @@ import java.util.*;
 
 public class Tower{
     Deque<Disc> discs = new ArrayDeque<Disc>();
-    public void addDisc(Disc disc){
-        discs.push(disc);
+    public void addDisc(Disc disc) throws Exception{
+        Disc topDisc = discs.peek();
+        if(topDisc == null || disc.getSize() < topDisc.getSize()){
+            discs.push(disc);
+        }
+        else{
+            throw new Exception("Cannot Put Disc!!!");
+        }
+        
     }
 
     public Disc removeDisc(){
