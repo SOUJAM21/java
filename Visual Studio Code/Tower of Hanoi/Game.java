@@ -25,6 +25,12 @@ public class Game{
        int to = s2.nextInt();
 
       move(from,to);
+
+      boolean done = isGameDone();
+      if(done==true){
+        System.out.println("Game Over");
+        break;
+      }
 }
         //move
         //if(isGameDone){
@@ -75,6 +81,14 @@ public class Game{
     }
 
     private boolean isGameDone(){
-        return false;
+        Tower thirdTower = towers.get(2);
+        int numDiscs = thirdTower.getNumDiscs();
+
+        if(numDiscs ==3){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

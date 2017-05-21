@@ -26,4 +26,10 @@ public class Tower{
              System.out.println(" ");
         }
     }
+
+    public int getNumDiscs(){
+        int numDiscSize = discs.size();
+       // System.out.println("# of discs on 3: " + numDiscSize);
+        return numDiscSize;
+    }
 }
