@@ -5,6 +5,7 @@ public class Game{
     ArrayList<Tower> towers = new ArrayList<Tower>();
     boolean loop = true;
     public void play() throws Exception{
+        int numSteps;
         //setup
         setUp();
     //loop
@@ -25,10 +26,11 @@ public class Game{
        int to = s2.nextInt();
 
       move(from,to);
+      numSteps = numSteps+1;
 
       boolean done = isGameDone();
       if(done==true){
-        System.out.println("Game Over");
+        System.out.println("Game Over, It took you " + numSteps + " moves to get here");
         break;
       }
 }
@@ -91,4 +93,5 @@ public class Game{
             return false;
         }
     }
+
 }
